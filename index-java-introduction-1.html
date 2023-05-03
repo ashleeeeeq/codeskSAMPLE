@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-intro-to-java.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">Java</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-java-introduction-1.html">Introduction to Java</a>
+        <a href="./index-java-variables-2.html">Variables</a>
+        <a href="./index-java-oop-3.html">Object-Oriented Programming</a>
+        <a href="./index-java-conditional-controlflow-4.html">Conditional and Control Flow</a>
+        <a href="./index-java-access-encap-static-5.html">Access, Encapsulation, and Static Methods</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Introduction to Java</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+            <p>Java is a popular object-oriented programming language for developing various applications, from simple console programs to complex web and mobile applications. Java code is written in a text editor and then compiled into bytecode, which can be executed on any platform with the Java Virtual Machine (JVM) installed.</p>
+            <br>
+            <p>Here is an example of a basic Java program:</p>
+            <br>
+            <p id="codesample">
+              public class HelloWorld { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) { <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, world!"); <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+             }
+             
+            </p>
+            <br>
+            <p>Let's break down this code:</p>
+            <br>
+            <ul>
+              <li>The first line declares a public class named "HelloWorld".</li>
+              <li>The second line declares a public static method named "main", which is the entry point for the program.</li>
+              <li>The "String[] args" parameter is used to pass command-line arguments to the program.</li>
+              <li>The third line uses the "System.out.println" method to print the string "Hello, world!"</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2dZiMBwX_5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h6> References: Video: https://www.youtube.com/watch?v=2dZiMBwX_5Q </h6>
+          </div>
+
+        <div class="btn-startQuiz">
+          <a href="assessment1.html">
+            <button class="btn btn-primary">
+              <p class="btn-text">START ASSESSMENT</p>
+              <span class="square"></span>
+            </button>
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

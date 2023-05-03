@@ -1,0 +1,345 @@
+body{
+    background-color: #011627;
+}
+
+.formmm{
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    margin-top: 170px; 
+    margin-left: 270px;
+    margin-right: 350px;
+    margin-bottom: 100px;
+    background-color: #28242c;
+    padding: 75px;
+    border-radius: 10px;
+}
+
+
+.codecontent{
+    font-family: Fira Code;
+    color: white;
+}
+.codeheader{
+    font-family: Fira Code;
+    color: white;
+}
+
+input[type="text"] {
+    height: 10px;
+    width: 200px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+  }
+
+  input[type="text2"] {
+    height: 10px;
+    width: 40px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+  }
+
+  input[type="text3"] {
+    height: 10px;
+    width: 40px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    pointer-events: auto;
+    position: absolute;
+  }
+  
+  input[type="text4"] {
+    height: 10px;
+    width: 40px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 315px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text5"] {
+    height: 10px;
+    width: 90px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text6"] {
+    height: 10px;
+    width: 90px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-left: 105px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+  }
+
+  input[type="text7"] {
+    height: 10px;
+    width: 90px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-left: 230px;
+    margin-top: -20px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text8"] {
+    height: 10px;
+    width: 60px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text9"] {
+    height: 10px;
+    width: 40px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-left: 75px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+  }
+
+  input[type="text10"] {
+    height: 10px;
+    width: 40px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-left: 150px;
+    margin-top: -22px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text11"] {
+    height: 10px;
+    width: 105px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text12"] {
+    height: 10px;
+    width: 60px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text13"] {
+    height: 10px;
+    width: 100px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: -23px;
+    margin-left: 232px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text14"] {
+    height: 10px;
+    width: 100px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: -23px;
+    margin-left: 232px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+  input[type="text15"] {
+    height: 10px;
+    width: 85px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: -23px;
+    margin-left: 160px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+
+  input[type="text16"] {
+    height: 10px;
+    width: 170px;
+    padding: 10px;
+    border: -12px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: -23px;
+    margin-left: 85px;
+    color: rgb(0, 49, 141);
+    font-family: Fira Code;
+    position: absolute;
+  }
+input[type="text"]:focus,
+input[type="text2"]:focus,
+input[type="text3"]:focus,
+input[type="text4"]:focus,
+input[type="text5"]:focus,
+input[type="text6"]:focus,
+input[type="text7"]:focus,
+input[type="text8"]:focus,
+input[type="text9"]:focus,
+input[type="text10"]:focus,
+input[type="text11"]:focus,
+input[type="text12"]:focus,
+input[type="text13"]:focus,
+input[type="text14"]:focus,
+input[type="text15"]:focus,
+input[type="text15"]:focus{
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 10px #6c63ff;
+}
+
+  input[value="Submit"]{  
+    background-color: #ffd650;
+    font-family: Fira Code;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .circle1 {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: -60px;
+    margin-top: -60px;
+  }
+
+  .circle2 {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: -35px;
+    margin-top: -15px;
+  }
+  
+  .circle3 {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-left: -10px;
+    margin-top: -15px;
+  }
+
+  .circle1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff5f56;
+  }
+
+  .circle2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ffbd2e
+  }
+
+  .circle3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #27c93f;
+  }

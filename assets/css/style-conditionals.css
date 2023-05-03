@@ -1,0 +1,372 @@
+
+/*-----------------------------------*\
+  #VARIABLE
+\*-----------------------------------*/
+
+@import url(./variable.css);
+@import url(DailyHours.ttf);
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-nav li { list-style: none; }
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
+
+img, span, a, ion-icon { display: block; }
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html {
+  font-family: "Jost", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-color2); 
+}
+
+@font-face {
+  font-family: 'HeaderFont';
+  src: url(Coconut\ Cookies.ttf);
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #COMPONENT
+\*-----------------------------------*/
+
+.btn {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-5);
+  border-radius: 8px;
+  color: var(--white);
+  padding: 20px 45px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.btn .btn-text {
+  position: relative;
+  z-index: 5;
+}
+
+.btn-primary,
+.btn-secondary .square {
+  background: var(--goldish);
+}
+
+.btn .square {
+  position: absolute;
+  top:   50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width:  40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: var(--default-transition);
+}
+
+.btn:hover .square {
+  right: -2px;
+  width:  102%;
+  height: 102%;
+}
+
+.btn-primary .square, .btn-secondary {
+  background: var(--dark-highlight);
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.section-subtitle {
+  color: var(--ultramarine-blue);
+  font-weight: var(--fw-7);
+  text-transform: uppercase;
+}
+
+.section-text {
+  color: var(--sonic-silver);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-6);
+  line-height: 1.6;
+}
+
+.section-title {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-8);
+  color: var(--oxford-blue);
+  line-height: 1.3;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
+
+.container {
+  background: var(--white);
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+
+/*-----------------------------------*\
+  #HEADER 
+\*-----------------------------------*/
+
+.navbar {
+  position: fixed;
+  margin-top: auto;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 2000px;
+  background: hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 20px -5px hsla(0, 0%, 0%, 0.03);
+  z-index: 100;
+}
+
+.navbar img {
+  width: 90px;
+}
+
+.navbar-nav {
+  position: absolute;
+  background: var(--white);
+  top: calc(100% + 40px);
+  left:  30px;
+  right: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px -5px hsla(0, 0%, 0%, 0.25);
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+.nav-item a {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: var(--fw-6);
+  color: #000000;
+  transition: var(--default-transition);
+}
+
+.nav-item:not(:last-child) a { 
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1); 
+}
+
+.nav-item a:hover {
+  color: var(--highlight);
+}
+
+.navbar-nav.active {
+  animation: menuPopup 0.5s ease forwards;
+  pointer-events: all;
+}
+
+@keyframes menuPopup {
+
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+.navbar .btn {
+  display: none;
+  background: var(--goldish);
+}
+
+.nav-toggle-btn {
+  background: var(--dark-highlight);
+  width:  50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-toggle-btn span {
+  background: var(--dark-highlight);
+  width: 30px;
+  height: 2px;
+  transition: var(--default-transition);
+}
+
+.nav-toggle-btn.active .one {
+  transform: rotate(45deg) translate(3px, 3px);
+} 
+
+.nav-toggle-btn.active .two {
+  display: none;
+}
+
+.nav-toggle-btn.active .three {
+  transform: rotate(-45deg) translate(2px, -2px); 
+}
+
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  margin-top: 20px;
+  top: 6em;
+  left: 0;
+  background: var(--goldish);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #171616;
+}
+.sidebar a {
+  margin-top: 40px;
+  padding: 6px 8px 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #171616;
+  display: block;
+}
+
+/* Lesson Part */
+.lesson-container { 
+  margin-left: 20em;
+  margin-top: 10em;
+  margin-bottom: -23em;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.1fr 0.3fr 0.3fr; 
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "lesson-title lesson-title lesson-title lesson-title"
+    "content1 content1 content1 content1"
+    ". . btn-startQuiz btn-startQuiz";
+  grid-area: lesson-container;
+}
+
+.lesson-title {
+  padding: 0 0 5em 0;
+  grid-area: lesson-title; 
+}
+
+.content { 
+  grid-area: content1; 
+  margin-right: 30px;
+}
+
+.content li {
+  padding: 8px;
+  margin-left: 20px;
+}
+
+.codesample { 
+  margin-top: 5em;
+  grid-area: codesample; 
+  justify-self: start;
+}
+
+#codesample {
+  border-style: solid;
+  padding: 10px;
+}
+
+.video-tutorial { 
+  grid-area: video-tutorial; 
+  margin-top: 5em;
+}
+
+.video-tutorial-summary { 
+  grid-area: video-tutorial-summary; 
+  justify-self: center;
+}
+
+.citation-references { 
+  margin-top: 5em;
+  grid-area: citation-references; 
+  justify-self: stretch;
+}
+
+.btn-startQuiz { 
+  margin: 5em;
+  grid-area: btn-startQuiz; 
+  justify-self: center;
+  align-self: start;
+}
+
+.btn-startQuiz button {
+    background: var(--goldish);
+}

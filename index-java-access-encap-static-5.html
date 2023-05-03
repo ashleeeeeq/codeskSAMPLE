@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-access-encap-static.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">Java</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-java-introduction-1.html">Introduction to Java</a>
+        <a href="./index-java-variables-2.html">Variables</a>
+        <a href="./index-java-oop-3.html">Object-Oriented Programming</a>
+        <a href="./index-java-conditional-controlflow-4.html">Conditional and Control Flow</a>
+        <a href="./index-java-access-encap-static-5.html">Access, Encapsulation, and Static Methods</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Access, Encapsulation, and Static Methods</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+          <p>How do access, encapsulation, and static methods work in Java?</p>
+          <br>
+          <p>Access control, encapsulation, and static methods are essential concepts in Java that control the visibility and behavior of variables and methods within a program.</p>
+          <br>
+          <p>Access control: Access control in Java allows you to control the visibility of variables and methods within a class. Java provides four access modifiers for this purpose</p>
+          <br>
+          <ul>
+            <li><b>Public:</b> A public variable or method can be accessed from any other class in the program.</li>
+            <li><b>Private:</b> A private variable or method can only be accessed within the class in which it is defined.</li>
+            <li><b>Protected:</b> A protected variable or method can be accessed within the same package classes and sub-class of any other packages.</li>
+            <li><b>Default (no modifier):</b> A default variable or method can be accessed within the same package in which it is defined.</li>
+          </ul>
+          <br>
+          <p>The access modifiers can be applied to both variables and methods in Java.</p>
+          <br>
+          <br>
+          <p>
+            <b>Encapsulation:</b> Encapsulation is a principle of object-oriented programming that allows you to control the visibility and behavior of variables and methods within a class. Encapsulation helps to ensure that other parts of the program do not accidentally modify the internal state of a class. In Java, encapsulation is achieved through the use of access modifiers (as described above) and by providing public methods (known as "getters" and "setters") to access and modify the private variables of a class. Here's an example of encapsulation in Java:
+          </p>
+          <br>
+          <p id="codesample">
+            public class Person { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;private String name; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;private int age; <br>
+              <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;public String getName() { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return name; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public void setName(String name) { <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name; <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;public int getAge() { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return age; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;public void setAge(int age) { <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = age; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+          }
+          
+          </p>
+          <br>
+          <p>In this example, the "name" and "age" fields are private and can only be accessed or modified through the public "getter" and "setter" methods.</p>
+          <br>
+          <br>
+          <p>
+            <b>Static methods:</b> A static method is a method that belongs to a class rather than an instance of the class. Static methods can be called directly on the class without creating an instance of the class first. Static methods are often used for utility functions or operations that do not depend on the state of a particular instance of a class. In Java, you declare a method as static using the "static" keyword. For example:
+          </p>
+          <br>
+          <p id="codesample">
+            public class MyUtils { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;public static int add(int a, int b) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return a + b; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+          }
+          
+          </p>
+          <br>
+          <p>
+            Static methods are often used for utility functions that don't need to maintain any state, and the <b>Math</b> class is an excellent example of this. The <b>Math</b> class in Java contains several static methods that provide mathematical functions for performing various calculations. These methods are widely used in scientific and engineering applications and other fields where numerical calculations are required.
+          </p>
+          <br>
+          <p>
+            Here are some of the commonly used static methods in the <b>Math</b> class:
+          </p>
+          <br>
+          <ol>
+            <li><b>abs()</b>: This method returns the absolute value of a number, which is its distance from zero. For example, <b>Math.abs(-5)</b> returns 5.</li>
+            <li><b>max()</b>: This method returns the greater of two numbers. For example, <b>Math.max(5, 7)</b> returns 7.</li>
+            <li><b>min()</b>: This method returns the smaller of two numbers. For example, <b>Math.min(5, 7)</b> returns 5.</li>
+            <li><b>sqrt()</b>: This method returns the square root of a number. For example, <b>Math.sqrt(25)</b> returns 5.</li>
+            <li><b>pow()</b>: This method returns the value of the first argument raised to the power of the second argument. For example, <b>Math.pow(2, 3)</b> returns 8.</li>
+            <li><b>exp()</b>: This method returns the exponential value of a number, which is e raised to the power of the given argument. For example, <b>Math.exp(1)</b> returns the value of e (approximately 2.718).</li>
+            <li><b>log()</b>: This method returns the natural logarithm of a number. For example, <b>Math.log(10)</b> returns the natural logarithm of 10 (approximately 2.302).</li>
+            <li><b>sin(), cos(), tan()</b>: These methods return the trigonometric sine, cosine, and tangent of an angle, respectively. These methods take the angle in radians as an argument. For example, <b>Math.sin(Math.PI/2)</b> returns the sine of 90 degrees (which is 1).</li>
+            <li><b>random()</b>: This method returns a random double value between 0.0 and 1.0. For example, <b>Math.random()</b> returns a value between 0.0 and 1.0 (exclusive).</li>
+          </ol>
+          <br>
+          <p>To use any of these methods, you can call them directly in the Math class like this:</p>
+          <br>
+          <p id="codesample">
+            double result = Math.sqrt(25); <br>
+	          System.out.println(Math.abs(-10));
+          </p>
+          <br>
+          <p>In this example, the <b>sqrt()</b> method is called in the <b>Math</b> class to calculate the square root of 25, which is then assigned to the <b>result</b> variable. And the other statement, Math.abs(-10), takes -10 as an argument and returns its absolute value of  10. The System.out.println() method then prints the value of 10 to the console.</p>
+          <br>
+          <p>Overall, the <b>Math</b> class provides various mathematical functions that can be used in multiple applications.</p> 
+          <br>
+          <p>Moreover, access control, encapsulation, and static methods are important concepts in Java that help to ensure that code is well-organized, secure, and easy to maintain.</p>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bvNU24rvhgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h6> References: Video from: https://youtu.be/bvNU24rvhgA</h6>
+          </div>
+
+        <div class="btn-startQuiz">
+          <a href="assessment7.html">
+            <button class="btn btn-primary">
+              <p class="btn-text">START ASSESSMENT</p>
+              <span class="square"></span>
+            </button>
+          </a>
+          
+        </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

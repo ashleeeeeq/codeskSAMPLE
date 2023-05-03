@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-logicaloperators.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html #home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">C#</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-csharp-introduction-1.html">Introduction to C#</a>
+        <a href="./index-csharp-datatypesvariables-2.html">Data Types and Variables</a>
+        <a href="./index-csharp-logic-and-conditionals-3.html">Logic and Conditionals</a>
+        <a href="./index-csharp-methods-4.html">Methods</a>
+        <a href="./index-csharp-arrays-and-loops-5.html">Arrays and Loops</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Logic and Conditionals</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+            <h3>Logical Operators</h3>
+            <br>
+            <p>
+              In C#, you can use logical operators and conditional statements to control the flow of your program. Logical operators allow you to combine conditions, while conditional statements enable you to execute different codes based on those conditions.
+            </p>
+            <p>
+              There are three logical operators in C#:
+            </p>
+            <br>
+            <p>
+              Here are some common data types and variables in C#:
+            </p>
+            <br>
+            <ol>
+              <li><b>‘&&’ (logical AND):</b> Returns true if both operands are true.</li>
+              <li><b>‘||’ (logical OR):</b> Returns true if either operand is true.</li>
+              <li><b>‘!’ (logical NOT):</b> Returns the opposite of the operand's value (true if the operand is false, and vice versa).</li>
+            </ol>
+          <br>
+          <p> Here's an example of using logical operators to combine conditions</p><br>
+          <p id="codesample">
+            int age = 25; <br>
+            bool isStudent = true; <br>
+
+            if (age >= 18 && !isStudent) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("You are eligible to vote."); <br>
+            } else { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("You are not eligible to vote."); <br>
+            }
+          </p>
+          <br>
+          <p> In this example, we use the ‘&&’ operator to combine two conditions: ‘age >= 18’ and ‘!isStudent’. The first condition checks if the ‘age’ variable is greater than or equal to 18. The second condition checks if the ‘isStudent’ variable is false (using the ‘!’ operator to negate its value). If both conditions are ‘true,’ the code inside the ‘if’ statement is executed, which prints "You are eligible to vote." Otherwise, the code inside the ‘else’ statement is executed, which prints "You are not eligible to vote." </p>
+          <br>
+          <br>
+          <br>
+          <h3>Conditional Statements</h3>
+          <br>
+          <p>There are two conditional statements in C#: ‘if’ and ‘switch.’
+          <br>
+          <h4>‘if’ statement </h4>
+          <br>
+          The ‘if’ statement allows you to execute different code based on a condition. Here's an example:
+          </p>
+          <br>
+          <p id="codesample">
+            int age = 25;
+            <br>
+            if (age >= 18) { <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("You are eligible to vote."); <br>
+            }
+          </p>
+          <br>
+          <p> In this example, we check if the ‘age’ variable is greater than or equal to 18 using the ‘>=’ operator. If the condition is ‘true,’ the code inside the ‘if’ statement is executed, which prints "You are eligible to vote."  </p>
+          <br>
+          <p id="codesample">
+            int count = 0; <i> // declaring and initializing an integer variable named count with an initial value of 0 </i>
+          </p>
+          <br>
+          <p>To use a variable in your program, you can refer to its name. For example, to print the value of the ‘age’ variable to the console, you can use the ‘Console.WriteLine’ method like this:</p>
+          <br>
+          <p>You can also use the ‘else’ keyword to specify what code to execute if the condition is ‘false’:</p>
+          <br>
+          <p id="codesample">
+            int age = 15; <br>
+
+            if (age >= 18) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("You are eligible to vote."); <br>
+            } else { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("You are not eligible to vote."); <br>
+            }
+
+          </p>
+          <br>
+          <p>In this example, because the ‘age’ variable is less than 18, the condition is ‘false,’ so the code inside the ‘else’ statement is executed, which prints "You are not eligible to vote."
+          ‘switch’ statement 
+          The ‘switch’ statement allows you to execute different codes based on the value of a variable. Here's an example:
+          </p>
+          <br>
+          <p id="codesample">
+            int dayOfWeek = 3; <br>
+
+            switch (dayOfWeek) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;case 1: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Monday"); <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;case 2: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Tuesday"); <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;case 3: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Wednesday"); <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;case 4: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Thursday"); <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+            }
+          </p>
+          <br>
+          <p>
+            In this example, we use the ‘switch’ statement to print the name of the day of the week based on the value of the ‘dayOfWeek’ variable. The ‘case’ keyword specifies the value to match, and the code inside each case block is executed if the value matches. The ‘default’ keyword specifies what code to run if none of the values matches.
+          </p>
+          <br>
+          <br>
+          <p> To know more about this lesson, you may watch the tutorial video below: </p>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mmIKM0SXaR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h6> References: C# Review - Conditional Logic and Expressions https://youtu.be/mmIKM0SXaR0</h6>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

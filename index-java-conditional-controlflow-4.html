@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-conditional-controlflow.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">Java</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-java-introduction-1.html">Introduction to Java</a>
+        <a href="./index-java-variables-2.html">Variables</a>
+        <a href="./index-java-oop-3.html">Object-Oriented Programming</a>
+        <a href="./index-java-conditional-controlflow-4.html">Conditional and Control Flow</a>
+        <a href="./index-java-access-encap-static-5.html">Access, Encapsulation, and Static Methods</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Conditional and Control Flow</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+          <p>How do conditionals and control flow work in Java?</p>
+          <br>
+          <p>
+            Conditionals and control flow are essential concepts in programming, and Java provides several constructs to control the flow of a program's execution based on certain conditions. Here are some of the most common constructs in Java for conditional and control flow:
+          </p>
+          <br>
+          <p>•	If-else statements: If-else statements allow you to execute a block of code if a certain condition is met or an alternative block of code if the condition is not met. The basic syntax of an if-else statement in Java is as follows:</p>
+          <br>
+          <p id="codesample">
+            if (condition) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;// Code to be executed if the condition is true <br>
+            } else { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;// Code to be executed if the condition is false <br>
+            }
+
+          </p>
+          <br>
+          <p>•	Switch statements: A switch statement allows you to select one of several blocks of code to execute, depending on the value of a given expression. The basic syntax of a switch statement in Java is as follows:</p>
+          
+          <br>
+          <p id="codesample">
+            switch (expression) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;case value1: <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>// Code to be executed if expression == value1</i> <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;case value2: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>// Code to be executed if expression == value2</i> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<i>// ...</i> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;default: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<i>// Code to be executed if none of the cases match</i><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+            }
+          </p>
+          <br>
+          <p><b>Loops:</b> Loops allow you to execute a block of code repeatedly, either a fixed number of times or until a specific condition is met. Java supports three types of loops:</p>
+          <br>
+          <p>•	For loops: A for loop executes a block of code a specified number of times. The basic syntax of a for loop in Java is as follows:</p>
+          <br>
+          <p id="codesample">
+            for (initialization; condition; update) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<i>// Code to be executed in each iteration</i> <br>
+          }
+          
+          </p>
+          <br>
+          <p>•	While loops: A while loop executes a code block if a particular condition is true. The basic syntax of a while loop in Java is as follows:</p>
+          <br>
+          <p id="codesample">
+            while (condition) { <br> 
+              &nbsp;&nbsp;&nbsp;&nbsp;<i>// Code to be executed as long as the condition is true</i> <br>
+          }
+          </p>
+          <br>
+          <p>•	Do-while loops: A do-while loop is similar to a while loop, but it executes the code block at least once, even if the condition is initially false. The basic syntax of a do-while loop in Java is as follows:</p>
+          <br>
+          <p id="codesample">
+            do { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<i>// Code to be executed at least once</i> <br>
+          } while (condition);
+          
+          </p>
+          <br>
+          <p>These constructs are powerful tools for controlling the flow of a program's execution based on certain conditions, and they are essential to writing complex programs in Java.</p>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/svz4vi5hF5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h6> References: Video from https://www.youtube.com/watch?v=svz4vi5hF5A </h6>
+          </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

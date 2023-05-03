@@ -1,0 +1,32 @@
+form{
+    position: absolute;
+    margin-top: 150px; 
+    margin-left: 400px;
+    margin-right: 350px;
+    margin-bottom: 100px;
+}
+
+input[value="Submit"]{  
+    background-color: #ffd650;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}

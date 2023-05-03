@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-conditionals.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+        
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">JavaScript</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-js-introduction-1.html">Introduction to JavaScript</a>
+        <a href="./index-js-conditionals-2.html">Conditionals</a>
+        <a href="./index-js-functions-3.html">Functions</a>
+        <a href="./index-js-arrays-4.html">Arrays</a>
+        <a href="./index-js-loops-5.html">Loops</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Conditionals</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+            <p>
+              Conditionals in JavaScript allow you to make decisions and execute different blocks of code based on certain conditions. Three types of conditional statements are commonly used: if, if-else, and switch.
+            </p>
+            <br>
+            <p>1. If Statement: The if statement allows you to execute a code block if a specified condition is true. If the condition is false, the code block is skipped.</p>
+            <br>
+            <p>Example:</p>
+            <br>
+            <p id="codesample">
+              var age = 18; <br>
+              <br>
+              if (age >= 18) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;console.log("You are eligible to vote."); <br>
+              }
+            </p>
+            <br>
+            <p>In this example, if the age variable is 18 or greater, the message "You are eligible to vote" will be displayed.</p>
+            <br>
+            <p>2.	If-Else Statement: The if-else statement provides an alternative execution path. If the condition specified in the if statement is true, the code block within the if statement is executed. The code block within the else statement is executed if the condition is false.</p>
+            <br>
+            <p>Example:</p>
+            <p id="codesample">
+              var temperature = 25; <br>
+              if (temperature > 30) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("It's a hot day!"); <br>
+              } else { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("It's a pleasant day."); <br>
+                } <br>
+              ; } 
+            </p>
+            <br>
+            <p>
+              In this example, if the temperature is greater than 30, the message "It's a hot day!" will be displayed. Otherwise, the message "It's a pleasant day." will be displayed.
+            </p>
+            <br>
+            <p>3.	Switch Statement: The switch statement provides a way to select one of many code blocks to be executed. It evaluates an expression and compares it with different cases. If a match is found, the corresponding code block is executed.</p>
+            <br>
+            <p>Example:</p>
+            <br>
+            <p id="codesample">
+              var day = "Monday";
+
+              switch (day) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;case "Monday": <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("It's the start of the week."); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;case "Friday": <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("It's almost the weekend!"); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;default: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log("Enjoy your day!"); <br>
+              }
+
+            </p>
+            <br>
+            <p>In this example, if the value of the day is "Monday", the message "It's the start of the week." will be displayed. If it's "Friday", the message "It's almost the weekend!" will be displayed. If none match, the default case will execute, and "Enjoy your day!" will be displayed.</p>
+            <br>
+            <p>These examples illustrate how conditionals in JavaScript allow you to control the flow of your program based on specific conditions. You can use logical operators, comparison operators, and various expressions to create more complex conditions within these statements.</p>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_5SgikgFf0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            
+            <h6> References: Readings: https://www.w3schools.com/, Video from https://youtu.be/_5SgikgFf0U</h6>
+          </div>
+
+          <div class="btn-startQuiz">
+            <a href="assessment6.html">
+              <button class="btn btn-primary">
+                <p class="btn-text">START ASSESSMENT</p>
+                <span class="square"></span>
+              </button>
+            </a>
+          </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

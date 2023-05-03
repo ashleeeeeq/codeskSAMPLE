@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-loops.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+        
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">JavaScript</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-js-introduction-1.html">Introduction to JavaScript</a>
+        <a href="./index-js-conditionals-2.html">Conditionals</a>
+        <a href="./index-js-functions-3.html">Functions</a>
+        <a href="./index-js-arrays-4.html">Arrays</a>
+        <a href="./index-js-loops-5.html">Loops</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Loops</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+          <p>Loops in JavaScript are used to repeatedly execute a block of code until a particular condition is met. They provide a way to automate repetitive tasks and iterate over arrays or other data collections.</p>
+          <br>
+          <p>Loops provide powerful control flow mechanisms in JavaScript, allowing you to repeat code execution until a condition is met. They are essential for tasks that involve iterating over collections, processing data, and implementing algorithms.</p>
+          <br>
+          <p>1.	For Loop: The <i>for</i> loop is commonly used when you know the number of iterations beforehand. It consists of an initialization, a condition, and an update expression.</p>
+          <br>
+          <p>Example:</p>
+          <br>
+          <p id="codesample">
+            for (var i = 0; i < 5; i++) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;console.log(i); <br>
+          }
+          
+          </p>
+          <br>
+          <p>In this example, the <i>for</i> loop will iterate five times, printing the value of i from 0 to 4.</p>
+          <br>
+          <p>2.	While Loop: The <i>while</i> loop executes a code block if a specified condition is true.</p>
+          <br>
+          <p>Example:</p>
+          <br>
+          <p id="codesample">
+            var i = 0; <br>
+            while (i < 5) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;console.log(i); <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;i++; <br>
+            }
+          </p>
+          <br>
+          <p>In this example, the <i>while</i> loop will execute the code block if i is less than 5, printing the value of i from 0 to 4.</p>
+          <br>
+          <p>3.	Do-While Loop: The <i>do-while</i> loop is similar to the <i>while</i> loop but guarantees that the code block executes at least once before checking the condition.</p>
+          <br>
+          <p>Example:</p>
+          <br>
+          <p id="codesample">
+            var i = 0; <br>
+            do { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;console.log(i); <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;i++; <br>
+            } while (i < 5);
+          </p>
+          <br>
+          <p>In this example, the code block will execute once, printing the value of i as 0, even though the condition is initially false.</p>
+          <br>
+          <p>4.	For...in Loop: The <i>for...in</i> the loop is used to iterate over the properties of an object.</p>
+          <br>
+          <p>Example:</p>
+          <br>
+          <p id="codesample">
+            const person = { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;name: "John", <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;age: 30, <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;city: "New York" <br>
+          }; <br>
+          <br>
+          for (var key in person) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;console.log(key + ": " + person[key]); <br>
+          } <br>
+          </p>
+          <br>
+          <p>In this example, the <i>for...in</i> loop iterates over the properties of the person object, printing the key-value pairs.</p>
+          <br>
+          <p>5.	For...of Loop: The <i>for...of</i> the loop is used to iterate over the elements of an iterable object, such as an array or a string.</p>
+          <br>
+          <p>Example:</p>
+          <br>
+          <p id="codesample">
+            const fruits = ["apple", "banana", "orange"]; <br>
+            <br>
+            for (var fruit of fruits) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;console.log(fruit); <br>
+            }
+
+          </p>
+          <br>
+          <p>In this example, the <i>for...of</i> loop iterates over the <i>fruits</i> array, printing each element.</p>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rTDAAhUgJZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h6> References: Readings: https://www.w3schools.com/, Video from  https://youtu.be/rTDAAhUgJZM</h6>
+          </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

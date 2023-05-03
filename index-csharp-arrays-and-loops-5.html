@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-arrayAndLoops.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">C#</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-csharp-introduction-1.html">Introduction to C#</a>
+        <a href="./index-csharp-datatypesvariables-2.html">Data Types and Variables</a>
+        <a href="./index-csharp-logic-and-conditionals-3.html">Logic and Conditionals</a>
+        <a href="./index-csharp-methods-4.html">Methods</a>
+        <a href="./index-csharp-arrays-and-loops-5.html">Arrays and Loops</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Arrays and Loops</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+            <h3>Arrays</h3>
+            <br>
+            <p>
+              Arrays in C# store a collection of similar types of elements. The elements of an array can be accessed using an index, which starts from 0. The general syntax for declaring an array in C# is as follows:
+            </p>
+            <br>
+            <p id="codesample">
+              dataType[] arrayName = new dataType[arraySize];
+            </p>
+            <br>
+            <p>
+              For example, to declare an array of integers that can hold five (5) elements, we can use the following code:
+            </p>
+            <br>
+            <p id="codesample">
+              int[] myArray = new int[5];
+            </p>
+            <br>
+            <p>We can also initialize the elements of an array during its declaration as follows:</p>
+            <br>
+            <p id="codesample">
+              int[] myArray = { 10, 20, 30, 40, 50 };
+            </p>
+            <br>
+            <br>
+            <br>
+            <h3>Loops</h3>
+            <br>
+            <p>In C#, loops are used to execute a code block repeatedly until a particular condition is met. There are three types of loops in C#: <b>‘for,’ ‘while,’ and ‘do-while’</b> loops. </p>
+            <br>
+            <br>
+            <br>
+            <p>The general syntax for a <b>‘for’</b> loop in C# is as follows:</p>
+            <br>
+            <p id="codesample">
+              for (initialization; condition; increment/decrement) <br>
+              { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<i>// code block to be executed</i> <br>
+              } <br>
+            </p>
+            <br>
+            <p>For example, the following code prints the numbers from 1 to 5:</p>
+            <br>
+            <p id="codesample">
+              for (int i = 1; i <= 5; i++) <br>
+              { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(i); <br>
+              }
+            </p>
+            <br>
+            <br>
+            <br>
+            <p>The general syntax for a <b>‘while’</b> loop in C# is as follows:</p>
+            <br>
+            <p id="codesample">
+              while (condition) <br>
+              { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<i>// code block to be executed</i> <br>
+              }
+            </p>
+            <br>
+            <p>For example, the following code prints the numbers from 1 to 5 using a <b>‘while’</b> loop:</p>
+            <br>
+            <p id="codesample">
+              int i = 1; <br>
+              while (i <= 5) <br>
+              { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(i); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;i++; <br>
+              }
+            </p>
+            <br>
+            <br>
+            <br>
+            <p>The general syntax for a <b>‘do-while’</b> loop in C# is as follows:</p>
+            <br>
+            <p id="codesample">
+              do <br>
+              { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<i>// code block to be executed</i> <br>
+              } while (condition);
+            </p>
+            <br>
+            <p>For example, the following code prints the numbers from 1 to 5 using a <b>‘do-while’</b> loop:</p>
+            <br>
+            <p id="codesample">
+              int i = 1; <br>
+              do <br>
+              { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(i); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;i++; <br>
+              } while (i <= 5);
+            </p>
+            <br>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BDfO1ryG6Rc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9ozOSKCiO0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <h6>References:   How to Create Arrays in C#: https://youtu.be/BDfO1ryG6Rc, How to Program in C# - Loops https://youtu.be/9ozOSKCiO0I</h6>
+          </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

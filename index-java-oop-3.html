@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-oop.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html #home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">Java</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-java-introduction-1.html">Introduction to Java</a>
+        <a href="./index-java-variables-2.html">Variables</a>
+        <a href="./index-java-oop-3.html">Object-Oriented Programming</a>
+        <a href="./index-java-conditional-controlflow-4.html">Conditional and Control Flow</a>
+        <a href="./index-java-access-encap-static-5.html">Access, Encapsulation, and Static Methods</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Object-Oriented Programming</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+          <p>How does Object-Oriented Programming work in Java?</p>
+          <br>
+          <p>
+            Object-oriented programming is a programming paradigm that uses objects to represent data and behaviors. Java is an object-oriented programming language that supports the four basic principles of object-oriented programming: encapsulation, inheritance, abstraction, and polymorphism.
+          </p>
+          <br>
+          <p>
+            In Java, everything is an object except for the primitive data types (such as int, float, etc.). Objects in Java are instances of classes, which are templates for creating objects. A class defines the properties (fields) and behaviors (methods) of objects that belong to it.
+          </p>
+          <br>
+          <p>
+            To use an object in Java, you must first create an instance of the class that defines it. This is done using the "new" keyword followed by the name of the class and any arguments that the class constructor requires. For example:
+          </p>
+          <br>
+          <p id="codesample">
+            Person john = new Person("John", 25);
+          </p>
+          <br>
+          <p>
+            This creates an instance of the Person class with the name "John" and age 25 and assigns it to the variable "john".
+          </p>
+          <br>
+          <p>
+            Once you have an instance of a class, you can access its fields and methods using dot notation. For example:
+          </p>
+          <br>
+          <p id="codesample">
+            System.out.println(john.getName()); <i>// prints "John"</i> <br>
+            john.setAge(26); <i>// sets the age of the person to 26</i>
+
+          </p>
+          <br>
+          <p>
+            This code accesses the "name" field and "getName()" and "setAge()" methods of the "john" object. <br>
+            In Java, you can also create subclasses that inherit properties and behaviors from a parent class. This is done using the "extends" keyword. For example:
+          </p>
+          <br>
+          <p id="codesample">
+            public class Student extends Person { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;private int studentId; <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;public Student(String name, int age, int studentId) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(name, age); <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.studentId = studentId; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;public int getStudentId() { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return studentId; <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+              }
+        
+          </p>
+          <br>
+          <p>This code creates a subclass of the Person class called Student, which adds a "studentId" field and a "getStudentId()" method. The "super" keyword is used to call the constructor of the parent class.</p>
+          <br>
+          <p>Overall, Java's object-oriented programming features allow for creation of reusable and modular code, making it a popular choice for software development.</p>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j0lBrYSlYaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h6> References:  Video from: https://youtu.be/j0lBrYSlYaU</h6>
+          </div>
+
+          <div class="btn-startQuiz">
+          <a href="assessment8.html">
+            <button class="btn btn-primary">
+              <p class="btn-text">START ASSESSMENT</p>
+              <span class="square"></span>
+            </button>
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

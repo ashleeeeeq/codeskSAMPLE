@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HELLO PI!
+  Palitan nalang yung mga nakalagay na sample messages and links/source. THANKS POH
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDesk - Programming Online Tutorials</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-functions.css">
+  <link rel="stylesheet" href="./assets/css/media_queries.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - main container
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <div class="navbar-brand">
+          <img src="./assets/images/logo.png" alt="CoDesk Logo">
+        </div>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #course">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html #contact">Contact Us</a>
+            </li>
+
+        </ul>
+        
+        <a href="quiz.html">
+          <button class="btn btn-primary">
+            <p class="btn-text">Quiz Time!</p>
+            <span class="square"></span>
+          </button>
+        </a>
+
+        <button class="nav-toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+      <div class="sidebar">
+        <h2 id="prog-lang-name">JavaScript</h1>
+        <!--Insert nalang yung mga webpage loc sa loob ng a href.-->
+        <a href="./index-js-introduction-1.html">Introduction to JavaScript</a>
+        <a href="./index-js-conditionals-2.html">Conditionals</a>
+        <a href="./index-js-functions-3.html">Functions</a>
+        <a href="./index-js-arrays-4.html">Arrays</a>
+        <a href="./index-js-loops-5.html">Loops</a>
+      </div>
+
+      <div class="lesson-container">
+
+        <div class="lesson-title">
+            <h1>Functions</h1> <!--Palitan nalang tong mga to-->
+        </div>
+        <div class="content">
+            <p>Functions in JavaScript are reusable blocks of code that can be called and executed when needed. They allow you to group related code, perform specific tasks, and organize your code into modular components. Functions can accept input parameters, perform actions, and return values.</p>
+            <br>
+            <p>Functions in JavaScript are powerful tools that enable code reuse, modularization, and abstraction. They can be invoked multiple times with different arguments, allowing for flexible and efficient coding. You can pass functions as arguments, store them in variables, and even define functions within functions.</p>
+            <br>
+            <p>1.	Function Declaration: A function is declared using the <b>function</b> keyword followed by the function name, a list of parameters enclosed in parentheses, and a code block.</p>
+            <br>
+            <p>Example:</p>
+            <br>
+            <p id="codesample">
+              function greet(name) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + name + "!"); <br>
+              } <br>
+              <br>
+              greet("John");
+            </p>
+            <br>
+            <p>In this example, the <i>greet</i> function is defined to take a <i>name</i> parameter. When the function is called with the argument "John", it will print "Hello, John!" to the console.</p>
+            <br>
+            <p>2.	Function Expression: A function expression assigns a function to a variable. It can be anonymous or named.</p>
+            <br>
+            <p>Example:</p>
+            <br>
+            <p id="codesample">
+              var greet = function(name) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("Hello, " + name + "!"); <br>
+              }; <br>
+              <br>
+              greet("Jane");
+            </p>
+            <p>In this example, an anonymous function is assigned to the <i>greet</i> variable. It accepts a name parameter and prints a greeting to the console when called with an argument.</p>
+            <br>
+            <p>3.	Arrow Function: Arrow functions provide a concise syntax for writing functions. They are beneficial for one-line functions or callbacks.</p>
+            <br>
+            <p>Example:</p>
+            <br>
+            <p id="codesample">
+              var multiply = (a, b) => a * b; <br>
+              <br>
+              console.log(multiply(5, 3)); <i>// Output: 15</i>
+            </p>
+            <br>
+            <p>In this example, an arrow function multiply takes two parameters, a and b, and returns their product. The result is then printed to the console.</p>
+            <br>
+            <p>4.	Returning Values: Functions can return values using the return keyword. The returned value can be assigned to a variable or used directly.</p>
+            <br>
+            <p>Example:</p>
+            <br>
+            <p id="codesample">
+              function add(a, b) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return a + b; <br>
+            } <br>
+              var result = add(2, 3); <br>
+              console.log(result); <i>// Output: 5</i>
+
+            </p>
+            <br>
+            <p>In this example, the add function takes two parameters and returns their sum. The returned value is assigned to the result variable and then printed to the console. </p>
+            <br>
+            <br>
+            <p> To know more about this lesson, you may watch the tutorial video below: </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xjAu2Y2nJ34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h6> References: Readings: https://www.w3schools.com/, Video from https://youtu.be/xjAu2Y2nJ34 </h6>
+          </div>
+
+        <div class="btn-startQuiz">
+          <a href="assessment5.html">
+            <button class="btn btn-primary">
+              <p class="btn-text">START ASSESSMENT</p>
+              <span class="square"></span>
+            </button>
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
